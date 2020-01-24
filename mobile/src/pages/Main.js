@@ -16,6 +16,7 @@ function Main({ navigation }) {
     async function loadInitialPosition() {
       const { granted } = await requestPermissionsAsync();
       //teste git
+      //TESTE
 
       if (granted){
         const { coords } = await getCurrentPositionAsync({
