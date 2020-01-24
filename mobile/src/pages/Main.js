@@ -15,6 +15,7 @@ function Main({ navigation }) {
   useEffect(() => {
     async function loadInitialPosition() {
       const { granted } = await requestPermissionsAsync();
+      //teste git
 
       if (granted){
         const { coords } = await getCurrentPositionAsync({
