@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import { StyleSheet, Image, View, Text, TextInput, TouchableOpacity } from 'react-native'
 import MapView, { Marker, Callout } from 'react-native-maps';
 import { requestPermissionsAsync, getCurrentPositionAsync } from 'expo-location';
@@ -15,9 +15,6 @@ function Main({ navigation }) {
   useEffect(() => {
     async function loadInitialPosition() {
       const { granted } = await requestPermissionsAsync();
-      //teste1
-      //teste2
-      //teste3
 
       if (granted){
         const { coords } = await getCurrentPositionAsync({
